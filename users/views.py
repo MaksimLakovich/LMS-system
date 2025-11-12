@@ -53,7 +53,7 @@ class CustomUserRetrieveUpdateAPIView(generics.RetrieveUpdateAPIView):
     permission_classes = [IsAuthenticated]
 
     def get_serializer_context(self):
-        """Передаёт request в сериализатор для дальнейшего анализа (например, в to_representation)."""
+        """Передает request в сериализатор для дальнейшего анализа (например, в to_representation)."""
         context = super().get_serializer_context()
         context["request"] = self.request
         return context

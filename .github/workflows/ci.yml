@@ -105,12 +105,12 @@ jobs:
             cd /var/www/lms_system
       
             # Если проект не склонирован, то клонируем
-            if [ ! -d "Homework-5-python-DJANGO-REST-FRAMEWORK" ]; then
-              git clone git@github.com:maksimlakovich/Homework-5-python-DJANGO-REST-FRAMEWORK.git
+            if [ ! -d "LMS-system" ]; then
+              git clone git@github.com:maksimlakovich/LMS-system.git
             fi
       
             # Переходим внутрь проекта
-            cd Homework-5-python-DJANGO-REST-FRAMEWORK
+            cd LMS-system
             
             # Подтягиваем свежие изменения из GitHub (docker-compose.yml, env и т.д.)
             # 1) fetch подтягивает новые данные.
